@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced JS Homework 1</title>
     <script type="module" crossorigin src="/goit-advancedjs-hw-01/1-gallery.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/rolldown-runtime-BDqkOrsv.js">
-    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/modulepreload-polyfill-wMinxHhO.js">
-    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/vendor-DeMJGFvr.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/modulepreload-polyfill-BnkOoLKg.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/vendor-C_NCK_LM.js">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/vendor-Bb4fYVx2.css">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-DUfWh7UT.css">
   </head>
@@ -20,6 +19,11 @@
           
           <ul class="gallery"></ul>
         </div>
-    </main>
+    </main>
+    <script>
+      if (typeof global === 'undefined') {
+        window.global = window;
+      }
+    </script>
   </body>
 </html>
