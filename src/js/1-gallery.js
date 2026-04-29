@@ -1,7 +1,6 @@
 
-import SimpleLightbox from 'simplelightbox';
+import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm.js';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-//import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm.js';
 
 const images = [
   {
@@ -88,7 +87,7 @@ const createGalleryItem = ({ preview, original, description }) => {
 const galleryMarkup = images.map(createGalleryItem).join('');
 gallery.innerHTML = galleryMarkup;
 
-const lightbox =new SimpleLightbox('.gallery a', {
+const lightbox =new SimpleLightbox('.gallery .gallery-link', {
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
