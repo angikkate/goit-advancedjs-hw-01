@@ -92,4 +92,3 @@ const lightbox =new SimpleLightbox('.gallery .gallery-link', {
   captionPosition: 'bottom',
   captionDelay: 250,
 });
-console.log(lightbox);
